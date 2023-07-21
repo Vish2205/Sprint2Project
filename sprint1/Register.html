@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <title>eBeauty</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <style>
+    .ml-auto {
+      margin-left: auto !important;
+    }
+  </style>
+</head>
+<body>
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#"><img src="product images\logo.png"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ebeautynav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#ebeautynav">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"onclick="handleNavItemClick('Home')">Product</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Lipsticks</a></li>
+                    <li><a href="#" class="dropdown-item">Concealer</a></li>
+                    <li><a href="#" class="dropdown-item">Eyeliner</a></li>
+                    <li><a href="#" class="dropdown-item">Foundation</a></li>
+                    <li><a href="#" class="dropdown-item">Face Powder</a></li>
+                    <li><a href="#" class="dropdown-item">Lip Gloss</a></li>
+                  </ul>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>    
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>   
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Video</a>
+          </li> 
+          <form class="d-flex">
+            <input type="text" value="" placeholder="Search...">
+            <button type="button" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+            </button>
+            </form>
+            <li> </li>
+            <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+            </nav>   
+  </section>
+  <br>
+  <br>
+<h4> Create an Account </h4>
+<form action="login.html" method="post">
+<div class="form-floating mb-3 mt-3">
+<input type="text" class="form-control" id="fname" name="fname" required>
+<label for="fname"> FistName </label>
+</div>
+<div class="form-floating mb-3 mt-3">
+<input type="text" class="form-control" id="lname" name="lname" required>
+<label for="lname"> LastName </label>
+</div>
+<div class="form-floating mb-3 mt-3">
+<input type="tel" class="form-control" id="phone" name="phone" required 
+pattern="[6789]{1}[0-9]{9}">
+<label for="phone"> Mobile Number </label>
+</div>
+<div class="form-floating mb-3 mt-3">
+<input type="email" class="form-control" id="email" name="email" >
+<label for="email"> Username </label>
+</div>
+<div class="form-floating mb-3 mt-3">
+<input type="password" class="form-control" id="password" name="password" required
+pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}">
+<label for="password"> Password </label>
+</div>
+<div class="form-floating mb-3 mt-3">
+<input type="password" class="form-control" id="cpassword" name="cpassword"
+pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}" required>
+<label for="cpassword"> Confirm Password </label>
+</div>
+<button type="submit" class="btn btn-danger">Register </button>
+</form>
+</div>
+</div>  
+
+</body>
+</html>
